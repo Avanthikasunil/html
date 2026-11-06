@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>registration form</title>
+</head>
+<body>
+<center>
+<h2>STUDENT REGISTRATION FORM</h2>
+<form method = "post">
+
+<label>Name:</label>
+<input type="text" name="name" id= "Name">
+<br><br>
+
+<label>Email:</label>
+<input type="text" name="email" id="Email">
+<br><br>
+
+<label>Phone number:</label>
+<input type="text" name="phonenumber" id="Phone number">
+<br><br>
+
+<label>Password:</label>
+<input type="text" name="password" id ="Password">
+<br><br>
+
+<label>Gender:</label>
+<input type="radio" name="gender" value="male">male
+<input type="radio" name="gender" value="female">female
+<br><br>
+
+<label>Date of birth:</label>
+<input type="date" name="dob" id="Date of birth">
+<br><br>
+
+<label>Address:</label><br>
+<textarea name="address" rows="4" cols="30" id="Address"></textarea>
+<br><br>
+
+<input type="submit" value="Register">
+<input type="reset" value="clear">
+
+</center>
+
+<script>
+function validateForm()
+{
+var name=document.getElementById("Name").value;
+var email=document.getElementById("Email").value;
+var phonenumber=document.getElementById("Phone number").value;
+var password=document.getElementById("Password").value;
+var dob=document.getElementById("Date of birth").value;
+var address=document.getElementById("Address").value;
+var gender=document.getElementByName("Gender").value;
+
+var msg="";
+if(Name =="")
+{
+msg += "Enter your name"
+}
+
+if(Email =="")
+{
+msg += "Enter your email"
+}
+
+if(Phone number =="")
+{
+msg += "Enter your phone number"
+}
+
+if(password =="")
+{
+msg += "Enter your password"
+}
+
+if(Date of birth =="")
+{
+msg += "Enter your Date of birth"
+}
+
+if(Address =="")
+{
+msg += "Enter your address"
+}
+
+if(Gender =="")
+{
+msg += "Enter your gender"
+}
+
+
+</form>
+</body>
+</html>
