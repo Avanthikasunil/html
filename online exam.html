@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ONLINE XM
+</title>
+</head>
+<body bgcolor="white">
+
+<h1 align="center">ONLINE EXAM</h1>
+<form name="exam" onsubmit="return submit1()" method="post">
+
+Enter your name:
+<input type="text" name="name">
+<br><br>
+
+Register number:
+<input type="text" name="reg">
+<br><br>
+
+date:
+<input type="date" name="date">
+<br><br>
+
+<center>
+<h3>QUESTIONS</h3>
+<h4>Attend all the questions</h4>
+</center>
+<br><br>
+
+1.what does HTML stands for?<br>
+<input type="radio" name="q1" value="A">hyper text markup language<br>
+<input type="radio" name="q1" value="B">high text markup language<br>
+<input type="radio" name="q1" value="C">high text machine language<br><br>
+
+2.how many heading tags are available in HTML?<br>
+<input type="radio" name="q2" value="A">6<br>
+<input type="radio" name="q2" value="B">4<br>
+<input type="radio" name="q2" value="C">3<br><br>
+
+
+3.what is the difference between opening and closing tags?<br>
+<input type="radio" name="q3" value="A">both have slash<br>
+<input type="radio" name="q3" value="B">closing tag has a slash<br>
+<input type="radio" name="q3" value="C">there is no difference<br><br>
+
+4.which tag is used to create a hyperlink?<br>                                                
+<input type="radio" name="q4" value="A">&lt;a&gt;<br>
+<input type="radio" name="q4" value="B">&lt;p&gt;<br>
+<input type="radio" name="q4" value="C">&lt;h1&gt<br><br>
+ 
+5.which tag is used to insert a image?<br>                                                                                                                                                                                                                                                                                                                                                                                         
+<input type="radio" name="q5" value="A">&lt;img&gt;<br>
+<input type="radio" name="q5" value="B">&lt;table&gt;<br>
+<input type="radio" name="q5" value="C">&lt;body&gt<br><br>
+
+<center>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</center>
+</form>
+
+<script>
+function submit1()
+{
+if(document.exam.name.value ==""||document.exam.name.value == null)
+{
+alert("Name can't be blank");
+return false;
+}
+if(document.exam.reg.value==""||document.exam.reg.value == null)
+{
+alert("Enter register number");
+return false;
+}
+
+var m = 0;
+
+if(document.exam.q1.value=="A")
+m = m + 1;
+
+if(document.exam.q2.value=="A")
+m = m + 1;
+
+if(document.exam.q3.value=="B")
+m = m + 1;
+
+if(document.exam.q4.value=="A")
+m = m + 1;
+
+if(document.exam.q5.value=="A")
+m = m + 1;
+
+alert("Thank you for attending the exam.your score is"+m+"out of 5");
+
+return false;
+}
+                                                                                                
+</script>
+</body>
+</html>
